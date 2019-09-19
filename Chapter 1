@@ -1,0 +1,11 @@
+The DBMS provides :
+a) a security system 
+b) an integrity system 
+c) a concurrency control system 
+d) a recovery control system 
+e) a user-accessible catalog
+
+Three Level ANSI-SPARC Architecture :
+1. External layer
+2. Conceptual layer
+3. Internal  layer
