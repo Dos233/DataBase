@@ -22,6 +22,9 @@ that must be followed in the same order to correctly perform a task.)
 e) Database access language : without doubt,if you wanna manipulate your database,you must use the database access language.
 
 The main approaches for managing the design of a database application that has multiple user views :
-a)centralized approach :First of all, the requirements of each use are merged into a single set of requirements. And then,
+a) centralized approach :First of all, the requirements of each use are merged into a single set of requirements. And then,
 we built a data mode based on the single set of requirements.
-b)view integration approach : the local data mode will be built with each
+b) view integration approach : the local data mode will be built with each user's view. And then,every local data mode is merged
+into a global data mode.
+c) commbination of both approaches
+
