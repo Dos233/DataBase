@@ -26,5 +26,5 @@ a) centralized approach :First of all, the requirements of each use are merged i
 we built a data mode based on the single set of requirements.
 b) view integration approach : the local data mode will be built with each user's view. And then,every local data mode is merged
 into a global data mode.
-c) commbination of both approaches
+c) combination of both approaches
 
