@@ -35,7 +35,7 @@ c) physical data model
 The difference between the three level:
 a) A conceptual data model identifies the highest-level relationships between the different entities. Features of conceptual data model include:
 · Includes the important entities and the relationships among them.
-· No attribute is specified.
+· attribute is specified.
 · No primary key is specified.
 b) A logical data model describes the data in as much detail as possible, without regard to how they will be physical implemented in the database. Features of a logical data model include:
 · Includes all entities and relationships among them.
