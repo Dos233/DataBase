@@ -1,0 +1,11 @@
+ER mode has(Conceptual mode) :
+a) Entity type : must have unique identifiable object (primary ID)
+b) Relation type 
+d) Attribute type
+degree of relationship:
+Number of participanting entity in the relationship
+
+Relaitonship of degree:
+has two :binary relaitonship 
+has three : ternary relationship 
+has four : quaternary
