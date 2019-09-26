@@ -10,7 +10,7 @@ Three Level ANSI-SPARC Architecture :
 2. Conceptual layer
 3. Internal  layer
 From higer level to lower level (1 to 3).If you wanna change the higher level data mode structure, you don't need to change the
-lower level.it shows us the feature that the data' independence.
+lower level.it shows us the feature that the data independence.
 
 The five components of the DBMS environment:
 a) hardware :the date will be stored in hardisk,so if you want to manage the data,the hardware should be necessary
