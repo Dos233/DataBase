@@ -1,6 +1,6 @@
 ER mode has(Conceptual mode) :
 a) Entity type : must have unique identifiable object (primary ID)
-b) Relation type 
+b) Relation type ：cardinality and participation
 d) Attribute type
 degree of relationship:
 Number of participanting entity in the relationship
