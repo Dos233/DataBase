@@ -10,3 +10,22 @@ has two :binary relaitonship
 has three : ternary relationship 
 has four : quaternary
 
+superclass/supertype: An entity type that includes one or more distinct subclass
+subclass/subtype: A distinct subgrouping of occurences of an entity type.
+(if two of more objects have different attribute, just make it split to become different subclass)
+
+a)Superclass/subclass relationship is one-to-one (1:1). 
+(Each member of a subclass is also a member of the superclass but has a distinct role.)
+b)Superclass may contain overlapping or distinct subclasses. 
+c)Not all members of a superclass need be a member of a subclass.
+
+what is generation : combination of many objects.
+
+Two constraints on specification/generation:
+a) Partcipation:
+mandatory: it has attributes in supperclass,and same attributes in subclass.
+optional: it may has attributes in supperclass, but not need to be in subclass
+
+b) Disjoint:
+1)and:it can be in more subclass
+2)or:just can be in one subclass
