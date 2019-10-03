@@ -29,3 +29,6 @@ optional: it may has attributes in supperclass, but not need to be in subclass
 b) Disjoint:
 1)and:it can be in more subclass
 2)or:just can be in one subclass
+
+Aggregation: it has "has-a" or "part-of "
+compostion: it same as aggregation, but it's strong ownership between entities.
