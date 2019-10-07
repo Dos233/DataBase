@@ -3,10 +3,13 @@ Limitation of Enhanced Entity-Relationship model:
 Basic concepts of ER modeling are not sufficient to represent requirements of newer, more complex applications.
 
 Most useful additional data modeling concepts of Enhanced ER (EER) model called:
-specialization/generalization 
-aggregation
-composition. 
-
+a) specialization/generalization 
+b) aggregation
+c) composition. 
+a):
+specialization:Process of maximizing differences between members of an entity by identifying their distinguishing characteristics. 
+Generalization:Process of minimizing differences between entities by identifying their common characteristics. 
+Defination:Semantic concepts are incorporated into the original ER model and called the Enhanced Entity-Relationship (EER) model.
 Response is development of additional ‘semantic’ modeling concepts.
 
 
@@ -25,10 +28,9 @@ Two constraints on specification/generation:
 a) Partcipation:
 mandatory: it has attributes in supperclass,and same attributes in subclass.
 optional: it has attributes in supperclass, but not need to be in subclass
-
 b) Disjoint:
-1)and:attributes can be in more subclasses
-2)or:attributes can be in one subclass
+1)and:superclass can be in more subclasses
+2)or:superclass can be in one subclass
 
 Aggregation: it has "has-a" or "part-of "
 compostion: it same as aggregation, but it's strong ownership between entities.
