@@ -50,8 +50,6 @@ Main type of constraints on relationships is called multiplicity.
 Multiplicity - number (or range) of possible occurrences of an entity type that may relate to a single occurrence
 of an associated entity type through a particular relationship. 
 Multiplicity for Binary relationship:
-a)Superclass/subclass relationship is one-to-one (1:1), one-to-many(1:*), many-to-many(*:*)
-(Each member of a subclass is also a member of the superclass but has a distinct role.)
-b)Superclass may contain overlapping or distinct subclasses. 
-c)Not all members of a superclass need be a member of a subclass.
+one-to-one (1:1), one-to-many(1:*), many-to-many(*:*)
+
 
