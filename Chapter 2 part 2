@@ -11,6 +11,15 @@ Response is development of additional ‘semantic’ modeling concepts.
 
 
 what is generation : combination of many objects.
+Superclass/supertype
+An entity type that includes one or more distinct subgroupings of its occurrences. 
+Superclass/supertype
+An entity type that includes one or more distinct subgroupings of its occurrences. 
+
+a) Superclass/subclass relationship is one-to-one (1:1). 
+(Each member of a subclass is also a member of the superclass but has a distinct role.)
+b) Superclass may contain overlapping or distinct subclasses. 
+c) Not all members of a superclass need be a member of a subclass.
 
 Two constraints on specification/generation:
 a) Partcipation:
