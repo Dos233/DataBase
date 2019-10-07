@@ -1,7 +1,27 @@
-ER mode has(Conceptual mode) :
-a) Entity type : must have unique identifiable object (primary ID)
-b) Relation type ：cardinality and participation
-d) Attribute type
+In this chapter, we will learn:
+1.How to use entity-Relationship(ER) modeling in database design.
+2.Basic concepts associated with ER model
+3.Diagramatic technique for displaying ER model using unified modeling language(UML)
+4.How to identify and resolve problems with ER model called connection traps
+5.How to build an ER model from a requirements specification
+
+Defination of Entity Relationship model is a set of concepts and graphical symbols that can
+create conceptual schemas.(ER model forms the basis of an ER diagram)
+
+ER mode has(Conceptual mode) three main components:
+a) Entity types : include entity occurence/instance(Uniquely identifiable object of an entity type)
+b) Relation types ：cardinality and participation
+d) Attributes: include simple attribute(e.g.salary), composite attribute(e.g.address that subdivided into street,city and so on)
+singled-valued(unique value e.g.matric,IC No) attribute, multi-valued(e.g.Branch entity may have more than one telephone attribute) attribute
+and Derived attribute(Represents a value that is derivable from value of a related attribute,or set of attribute,no necessarily in the same
+entity type(e.g.duration is calculated from start to finish attributes))
+a):
+Strong entity type:
+characteristic: each entity occurrence is uniquely identifiable using the primary key attribute.
+Weak entity type:
+characteristic: each entity occurrence cannot be uniquely identified using only the attributes associated with that entity types.
+
+
 degree of relationship:
 Number of participanting entity in the relationship
 
@@ -9,26 +29,29 @@ Relaitonship of degree:
 has two :binary relaitonship 
 has three : ternary relationship 
 has four : quaternary
+Recursive relationship:Relationship type where same entity type participates more than once in different roles.
+(e.g.Person is Married to Person, Employee Manages Employee and Student rooms- with student
+
+
+
+Cadidate key:Minimal set of attributes that uniquely identifies each occurrence of an entity type
+(e.g. branchNo attribute is the candidate key for the Branch entity and has the distinct value for each branch entity occurrence).
+(Cadidate key cannot contain a null value.)
+Primary key:candidate key selected to uniquely identify each occurrence of an entity type(e.g.staffNo)
+alternate key:Candidate key that is not selected as primary key known as alternate key.
+Composite key:A candidate key that consists of two or more attributes(e.g.Advertisment entity has attributes of propertyNo
+newspaperName,dateAdvert and cost)
 
 superclass/supertype: An entity type that includes one or more distinct subclass
 subclass/subtype: A distinct subgrouping of occurences of an entity type.
 (if two of more objects have different attribute, just make it split to become different subclass)
 
-a)Superclass/subclass relationship is one-to-one (1:1). 
+Main type of constraints on relationships is called multiplicity.
+Multiplicity - number (or range) of possible occurrences of an entity type that may relate to a single occurrence
+of an associated entity type through a particular relationship. 
+Multiplicity for Binary relationship:
+a)Superclass/subclass relationship is one-to-one (1:1), one-to-many(1:*), many-to-many(*:*)
 (Each member of a subclass is also a member of the superclass but has a distinct role.)
 b)Superclass may contain overlapping or distinct subclasses. 
 c)Not all members of a superclass need be a member of a subclass.
 
-what is generation : combination of many objects.
-
-Two constraints on specification/generation:
-a) Partcipation:
-mandatory: it has attributes in supperclass,and same attributes in subclass.
-optional: it may has attributes in supperclass, but not need to be in subclass
-
-b) Disjoint:
-1)and:it can be in more subclass
-2)or:just can be in one subclass
-
-Aggregation: it has "has-a" or "part-of "
-compostion: it same as aggregation, but it's strong ownership between entities.
