@@ -1,0 +1,15 @@
+What is Normalization?
+Normalization is a database design technique which organizes tables in a manner that reduces redundancy and dependency of data.
+
+From unf to 3nf:
+
+unf to 1nf
+Will remove repeating groups to create new logical schema.
+
+1nf to 2nf
+Will remove partition functional dependence to create new logical schema. 
+In addtion, we also need to keep primary key of new logical schema in parent logical schema.
+
+2nf to 3nf
+Will remove transtivly functional dependence to create new logical schema.
+In addtion, we also need to keep primary key of new logical schema in parent logical schema.
