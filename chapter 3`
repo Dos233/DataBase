@@ -1,0 +1,65 @@
+The steps to build logical schema:
+
+
+Step 1.1 Identify entity types
+Strong/Weak Entity
+Step 1.2 Identify relationship types
+Use Entity–Relationship (ER) diagrams
+Determine the multiplicity constraints of relationship types (1:1 ; 1:* ; recursive)
+Check for fan and chasm traps 
+Document relationship types 
+Step 1.3 Identify and associate attributes with entity or relationship types
+Simple/composite attributes
+Single/multi-valued attributes
+Derived attributes
+
+Step 1.4 Determine attribute domains
+Step 1.5 Determine candidate, primary, and alternate key attributes
+Step 1.6 Consider use of enhanced modeling concepts (optional step) 
+Super- and subclasses
+Step 1.7 Check model for redundance
+(1) re-examine one-to-one (1:1) relationships; 
+(2) remove redundant relationships; 
+(3) consider time dimension
+Step 1.8 Validate conceptual model against user transaction
+Step 1.9 Review conceptual data model with user
+
+
+1. Strong entities
+Choose a primary key
+
+2. Weak entities
+will get its primary key later
+
+3. Binary 1:* relationships
+Relation at “1” end is parent
+Relation at “many” end is child
+include parent's PK in child as foreign key.
+
+4. Binary 1:1 relationships
+Three options, depending on participation
+Option A (mandatory participation on both sides):
+Merge both entities into a single entity
+choose either of the original PKs as the new PK
+include any attributes of the relationship
+
+Option B (mandatory participation on one side):
+relation with optional participation is parent 
+Relation with mandatory participation is child
+add PK of parent to child as FK.
+add any attribute of the relationship to child
+
+Option C (optional participation on both sides)
+Arbitrarily choose one entity as child, the other as parent
+proceed as usual - add PK of parent to child as FK; also add any attributes of the relationship
+also use this option if mandatory participation on both sides and want to keep separate relations
+If one entity is close to mandatory participation, choose that one as child.
+
+5. Recursive 1:1 relationships
+6. Super- and subclasses  
+7. Binary *:* relationships
+For each binary many-to-many relationship type create a new relation. 
+Add PKs of both “parents” to the new relation (as FKs) and also any attributes of the relationship
+
+8. Complex relationships
+9. Multi-valued attributes
